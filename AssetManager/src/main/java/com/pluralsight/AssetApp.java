@@ -25,9 +25,8 @@ public class AssetApp {
             System.out.printf("Current Value: $%.2f\n", asset.getValue());
 
             // Use instanceof to detect the real type of the object
-            if (asset instanceof House) {
-                // Downcast to House so we can access House-specific methods
-                House house = (House) asset;
+            //using patter variable
+            if (asset instanceof House house) {
                 System.out.println("Address: " + house.getAddress());
             } else if (asset instanceof Vehicle) {
                 // Downcast to Vehicle so we can access Vehicle-specific methods

@@ -17,8 +17,7 @@ public class Vehicle extends Asset {
     private int odometer;
 
     // Constructor - used to create a new Vehicle object
-    public Vehicle(String description, String dateAcquired, double originalCost,
-                   String makeModel, int year, int odometer) {
+    public Vehicle(String description, String dateAcquired, double originalCost, String makeModel, int year, int odometer) {
 
         // Call the parent class (Asset) constructor to set inherited fields
         super(description, dateAcquired, originalCost);
